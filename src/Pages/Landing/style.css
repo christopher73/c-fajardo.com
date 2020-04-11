@@ -1,0 +1,17 @@
+html,
+#root {
+  height: 100vh;
+}
+
+/* style={{ lineHeight: '2' }} */
+#intro {
+  height: 50vh;
+  line-height: 1.8 !important;
+}
+
+@media (max-width: 992px) {
+  #intro {
+    line-height: 1.6 !important;
+    font-size: 1.5em;
+  }
+}
