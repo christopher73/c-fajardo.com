@@ -2,16 +2,116 @@ html,
 #root {
   height: 100vh;
 }
-
-/* style={{ lineHeight: '2' }} */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap"); /* style={{ lineHeight: '2' }} */
 #intro {
+  font-family: "Bangers", cursive !important;
   height: 50vh;
-  line-height: 1.8 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.5rem !important;
+  /* font-weight: lighter !important; */
+  font-size: 3.5rem !important;
+  text-transform: uppercase;
+}
+#intro span,
+#intro h3 {
+  padding: 5px 10px;
+  color: rgb(135, 132, 187) !important;
+  background-color: black;
+}
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.85;
+}
+.btn-lets-talk {
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  color: white !important;
+  background-color: rgb(233, 85, 85) !important;
+  transition: background-color 1s !important;
+}
+.btn-lets-talk:hover {
+  color: rgb(252, 225, 129) !important;
+  text-decoration: line-through !important;
+  font-weight: bold !important;
+  background-color: rgb(114, 38, 38) !important;
+}
+.social-icon:hover {
+  color: rgb(72, 92, 1) !important;
+}
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
 @media (max-width: 992px) {
   #intro {
-    line-height: 1.6 !important;
-    font-size: 1.5em;
+    line-height: 2 !important;
+    font-size: 1.5em !important;
+  }
+  .video {
+    object-fit: fill !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 330px) {
+  #intro {
+    line-height: 2.5 !important;
+    font-size: 0.8rem !important;
+  }
+  .video {
+    object-fit: fill !important;
+    height: 100% !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

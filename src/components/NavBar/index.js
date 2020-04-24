@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../DarkMode/darkMode.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../DarkMode/darkMode.css";
 // import DarkMode from '../DarkMode/DarkMode';
-import Octicon, { Grabber } from '@primer/octicons-react';
-import ThemeContext from '../DarkMode/ThemeContext';
+import Octicon, { Grabber } from "@primer/octicons-react";
+import ThemeContext from "../DarkMode/ThemeContext";
 
 function ScrollToTopOnMount() {
   useEffect(() => window.scrollTo(0, 0));
@@ -12,24 +12,24 @@ function ScrollToTopOnMount() {
 function NavBar(props) {
   const [darkMode, setDarkMode] = useState(false);
   const darkModeStyle = {
-    dark: { backgroundColor: '#292c35', color: '#f2f2f2' },
-    light: { backgroundColor: 'white', color: '#292c35' },
+    dark: { backgroundColor: "#292c35", color: "#f2f2f2" },
+    light: { backgroundColor: "white", color: "#292c35" },
   };
   return (
     <React.Fragment>
       <ScrollToTopOnMount />
       <header>
         <nav
-          className="navbar navbar-expand-lg fixed-top"
+          className="navbar navbar-expand-lg fixed-top shadow-lg"
           style={darkMode ? darkModeStyle.dark : darkModeStyle.light}
         >
           <div className="container">
-            <Link
-              style={{ color: '#403336' }}
-              className="navbar-brand"
-              to="/"
-            >
-              <img alt="logo" src="./favicon.ico"></img>
+            <Link style={{ color: "#403336" }} className="navbar-brand" to="/">
+              <img
+                alt="logo"
+                src="./favicon.ico"
+                style={{ radius: "none", width: "110%" }}
+              ></img>
             </Link>
             <div className="ml-auto ">
               {/* <DarkMode /> */}
@@ -45,7 +45,7 @@ function NavBar(props) {
               </label>
             </div>
             <button
-              style={{ background: 'black' }}
+              style={{ background: "black" }}
               className="navbar-toggler "
               type="button"
               data-toggle="collapse"
@@ -54,41 +54,37 @@ function NavBar(props) {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <Octicon
-                className="text-white"
-                size="medium"
-                icon={Grabber}
-              />
+              <Octicon className="text-white" size="medium" icon={Grabber} />
             </button>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
-              style={{ flexGrow: '0' }}
+              style={{ flexGrow: "0" }}
             >
               <ul className="navbar-nav ">
                 <Link
-                  style={{ color: '#027373' }}
+                  style={{ color: "#027373" }}
                   className="btn btn-link"
                   to="/projects"
                 >
                   Projects
                 </Link>
                 <Link
-                  style={{ color: '#027373' }}
+                  style={{ color: "#027373" }}
                   className="btn btn-link"
                   to="/projects"
                 >
                   Blog
                 </Link>
                 <Link
-                  style={{ color: '#027373' }}
+                  style={{ color: "#027373" }}
                   className="btn btn-link"
                   to="/technologies"
                 >
                   Technologies
                 </Link>
                 <Link
-                  style={{ color: '#fff', background: 'black' }}
+                  style={{ color: "#fff", background: "black" }}
                   className="btn shadow-lg"
                   to="/contactme"
                 >
@@ -104,14 +100,14 @@ function NavBar(props) {
       >
         <div
           style={{
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
+            minHeight: "100vh",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
             ...(darkMode ? darkModeStyle.dark : darkModeStyle.light),
           }}
         >
-          <div style={{ height: '50px' }}></div>
+          <div style={{ height: "50px" }}></div>
           {props.children}
         </div>
       </ThemeContext.Provider>

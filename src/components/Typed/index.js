@@ -1,5 +1,5 @@
-import React from 'react';
-import Typed from 'typed.js';
+import React from "react";
+import Typed from "typed.js";
 
 class TypedString extends React.Component {
   componentDidMount() {
@@ -9,11 +9,11 @@ class TypedString extends React.Component {
     // You can pass other options here, such as typing speed, back speed, etc.
     const options = {
       strings: strings,
-      typeSpeed: 10,
-      backSpeed: 10,
+      typeSpeed: 30,
+      backSpeed: 30,
       smartBackspace: true, // this is a default
       loop: true,
-      shuffle: false,
+      shuffle: true,
     };
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options);
@@ -29,7 +29,7 @@ class TypedString extends React.Component {
     return (
       <span
         // style={{ color: '#8C4A7B', whiteSpace: 'pre' }}
-        ref={el => {
+        ref={(el) => {
           this.el = el;
         }}
       />
