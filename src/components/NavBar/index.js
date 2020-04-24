@@ -12,7 +12,7 @@ function ScrollToTopOnMount() {
 function NavBar(props) {
   const [darkMode, setDarkMode] = useState(false);
   const darkModeStyle = {
-    dark: { backgroundColor: "#292c35", color: "#f2f2f2" },
+    dark: { backgroundColor: "#121317", color: "#f2f2f2" },
     light: { backgroundColor: "white", color: "#292c35" },
   };
   return (
@@ -25,11 +25,7 @@ function NavBar(props) {
         >
           <div className="container">
             <Link style={{ color: "#403336" }} className="navbar-brand" to="/">
-              <img
-                alt="logo"
-                src="./favicon.ico"
-                style={{ radius: "none", width: "110%" }}
-              ></img>
+              <img alt="logo" src="./favicon.ico"></img>
             </Link>
             <div className="ml-auto ">
               {/* <DarkMode /> */}
@@ -84,8 +80,12 @@ function NavBar(props) {
                   Technologies
                 </Link>
                 <Link
-                  style={{ color: "#fff", background: "black" }}
-                  className="btn shadow-lg"
+                  style={
+                    darkMode
+                      ? { backgroundColor: "#bfa615", color: "black" }
+                      : darkModeStyle.dark
+                  }
+                  className="btn shadow text-uppercase shadow-lg font-weight-bold"
                   to="/contactme"
                 >
                   Contact me
