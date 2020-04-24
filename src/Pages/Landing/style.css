@@ -56,8 +56,9 @@ html,
     font-size: 1.5em !important;
   }
   .video {
-    object-fit: fill !important;
+    object-fit: cover !important;
     height: 100% !important;
+    width: 100% !important;
   }
 }
 @media (max-width: 330px) {
@@ -66,8 +67,9 @@ html,
     font-size: 0.8rem !important;
   }
   .video {
-    object-fit: fill !important;
+    object-fit: cover !important;
     height: 100% !important;
+    width: 100% !important;
   }
 }
 
