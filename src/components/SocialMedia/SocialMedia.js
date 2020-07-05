@@ -8,64 +8,48 @@ import {
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import resume from "./ChristopherResume2020.pdf";
 export default function SocialMedia() {
-  let styleIcon = {
-    color: "#027373",
-    fontSize: "2em",
-    marginRight: "10px",
-  };
   return (
-    <React.Fragment>
+    <div className='social-icon'>
       <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.linkedin.com/in/cffr90/"
+        className='social-icon-link'
+        rel='noopener noreferrer'
+        target='_blank'
+        href='https://www.linkedin.com/in/cffr90/'
       >
-        <FontAwesomeIcon
-          className="social-icon "
-          style={styleIcon}
-          icon={faLinkedin}
-        />
+        <FontAwesomeIcon icon={faLinkedin} />
       </a>
       <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.facebook.com/cffr90"
+        className='social-icon-link'
+        rel='noopener noreferrer'
+        target='_blank'
+        href='https://www.facebook.com/cffr90'
       >
-        <FontAwesomeIcon
-          className="social-icon "
-          style={styleIcon}
-          icon={faFacebook}
-        />
+        <FontAwesomeIcon icon={faFacebook} />
       </a>
       <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://github.com/christopher73"
+        className='social-icon-link'
+        rel='noopener noreferrer'
+        target='_blank'
+        href='https://github.com/christopher73'
       >
-        <FontAwesomeIcon
-          className="social-icon "
-          style={styleIcon}
-          icon={faGithub}
-        />
+        <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="mailto: christopher.fajardo73@gmail.com"
+        className='social-icon-link'
+        rel='noopener noreferrer'
+        target='_blank'
+        href='mailto: christopher.fajardo73@gmail.com'
       >
-        <FontAwesomeIcon
-          className="social-icon "
-          style={styleIcon}
-          icon={faEnvelope}
-        />
-      </a>{" "}
-      <a rel="noopener noreferrer" target="_blank" href={resume}>
-        <FontAwesomeIcon
-          className="social-icon "
-          style={styleIcon}
-          icon={faFile}
-        />
+        <FontAwesomeIcon icon={faEnvelope} />
       </a>
-    </React.Fragment>
+      <a
+        className='social-icon-link'
+        rel='noopener noreferrer'
+        target='_blank'
+        href={resume}
+      >
+        <FontAwesomeIcon icon={faFile} />
+      </a>
+    </div>
   );
 }

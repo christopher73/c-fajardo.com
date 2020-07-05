@@ -2,9 +2,8 @@
   position: relative;
   display: inline-block;
   width: 70px;
-  height: 100%;
+  height: 40px;
   padding: 6.5px;
-  margin-right: 17px;
 }
 
 .switch input {
@@ -15,14 +14,14 @@
 
 /* NOTE: slider is inside the switch  */
 .slider {
-  border: 1.5px solid black;
+  border: 1.5px solid #8ca893;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../../assets/day.png');
+  background: url("../../assets/day.png");
   background-color: #f1f1f1;
   background-position: right;
   background-repeat: no-repeat;
@@ -33,10 +32,10 @@
 
 .slider:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 30px;
   width: 30px;
-  bottom: 2px;
+  bottom: 4px;
   left: 2px;
   border: 1.5px solid #ff6b6b;
   background-color: #ff5959c9;
@@ -48,7 +47,7 @@
 }
 
 input:checked + .slider {
-  background: url('../../assets/night.png');
+  background: url("../../assets/night.png");
   background-color: #003030;
   background-position: left;
   background-repeat: no-repeat;

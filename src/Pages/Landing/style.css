@@ -1,46 +1,25 @@
 html,
+body,
 #root {
-  height: 100vh;
-}
-@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap"); /* style={{ lineHeight: '2' }} */
-#intro {
-  font-family: "Bangers", cursive !important;
-  height: 50vh;
-  line-height: 1.5 !important;
-  letter-spacing: 0.5rem !important;
-  /* font-weight: lighter !important; */
-  font-size: 3.5rem !important;
-  text-transform: uppercase;
-}
-#intro span,
-#intro h3 {
-  padding: 5px 10px;
-  color: rgb(135, 132, 187) !important;
-  background-color: black;
-}
-.video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
   min-height: 100%;
-  opacity: 0.85;
+  min-width: 100%;
+  margin: 0;
 }
-.btn-lets-talk {
-  text-transform: uppercase !important;
-  border-radius: 0 !important;
-  color: white !important;
-  background-color: rgb(233, 85, 85) !important;
-  transition: background-color 1s !important;
+
+.social-icon {
+  display: flex;
+  margin-bottom: 20px;
 }
-.btn-lets-talk:hover {
-  color: rgb(252, 225, 129) !important;
-  text-decoration: line-through !important;
-  font-weight: bold !important;
-  background-color: rgb(114, 38, 38) !important;
+.social-icon-link {
+  /* color: rgb(134, 134, 134); */
+  /* color: rgb(135, 132, 187); */
+  color: #82a88c;
+  font-size: 1.5em;
+  margin: auto;
 }
-.social-icon:hover {
-  color: rgb(72, 92, 1) !important;
+.social-icon-link:hover {
+  color: #abcfb4;
+  font-size: 2em;
 }
 .fade-in {
   animation: fadeIn ease 2s;
@@ -50,11 +29,15 @@ html,
   -ms-animation: fadeIn ease 2s;
 }
 
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.85;
+}
 @media (max-width: 992px) {
-  #intro {
-    line-height: 2 !important;
-    font-size: 1.5em !important;
-  }
   .video {
     object-fit: cover !important;
     height: 100% !important;
@@ -62,10 +45,6 @@ html,
   }
 }
 @media (max-width: 330px) {
-  #intro {
-    line-height: 2.5 !important;
-    font-size: 0.8rem !important;
-  }
   .video {
     object-fit: cover !important;
     height: 100% !important;
