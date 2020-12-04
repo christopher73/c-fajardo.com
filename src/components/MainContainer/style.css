@@ -70,6 +70,7 @@
 #btn-lets-talk {
   margin: 10px auto;
   text-transform: uppercase;
+  font-weight: bold;
   color: #fff;
   border-radius: 25px;
   background-color: rgb(233, 85, 85);
@@ -128,7 +129,19 @@
   margin: auto 5px;
   color: red;
 }
-
+.social-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+.social-icon-link {
+  color: #82a88c;
+  font-size: 1.5em;
+  margin: auto;
+}
+.social-icon-link:hover {
+  color: #abcfb4;
+  font-size: 2em;
+}
 @media only screen and (max-width: 1200px) {
   .side-bar {
     max-width: 300px;
@@ -140,15 +153,44 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .landing-project-div {
+    width: 100%;
+  }
+  .social-icons {
+    flex-direction: column;
+  }
+  .logo-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-div a {
+    margin: 10px 0px;
+  }
   .side-bar {
     max-width: 40%;
+  }
+  .side-bar-links a {
+    margin-left: 10px;
   }
   .side-bar-terminal {
     display: none !important;
   }
+  .side-bar-links a span {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .social-icons {
+    flex-direction: column;
+  }
+  .logo-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-div a {
+    margin: 10px 0px;
+  }
   .side-bar-text h1 {
     font-size: 10px;
   }
@@ -160,8 +202,10 @@
   }
   .side-bar-links a {
     font-size: 12px;
+    margin-left: 10px;
   }
-  .side-bar-links {
-    /* flex-grow: 4; */
+
+  .side-bar-links a span {
+    display: none;
   }
 }

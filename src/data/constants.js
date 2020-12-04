@@ -1,8 +1,73 @@
 export const allProjects = [
   {
+    title: "Ratemydeliveries.com",
+    localLink: "/ratemydeliveries",
+    gitLink: "https://github.com/christopher73/ratemydeliveries",
+    externalLink: "https://ratemydeliveries.com/",
+    isFeatured: true,
+    pictureLink: "./assets/img/ratemydeliveries.png",
+    year: "2020",
+    chartPower: {
+      type: "pie",
+      data: {
+        labels: ["js.svg", "sequelize.svg", "express.svg", "bootstrap.svg"],
+        datasets: [
+          {
+            data: [9, 7, 6, 5, 8, 9],
+            backgroundColor: [
+              "rgb(255, 99, 132)",
+              "rgb(54, 162, 235)",
+              "rgb(75, 192, 192)",
+              "rgb(153, 102, 255)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: true,
+        },
+        layout: {
+          padding: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+        },
+        scales: {
+          yAxes: [
+            {
+              display: false,
+              ticks: {
+                fontFamily: `"Roboto Mono", monospace`,
+                fontSize: 12,
+                fontColor: "#101c28",
+              },
+            },
+          ],
+          xAxes: [
+            {
+              display: false,
+              ticks: {
+                max: 10,
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    },
+    desc: `Ratemydeliveries.com is a website that collects and publishes reviews about delivery service satisfaction.  The Application uses  React JS  and Next js for hybrid static & server rendering on the front-end. As for the backend the application utilizes Google’s Firebase for its database and user authentication.`,
+    descLong: [
+      ` Backend: Firebase Firestore and Firebase Auth FrontEnd: React JS`,
+    ],
+  },
+  {
     title: "Starkclass.com",
     localLink: "/starkClass",
-    gitLink: "https://github.com/christopher73/StarkClass_",
+    gitLink: "https://github.com/christopher73/starkclass-client",
     externalLink: "https://starkclass.com",
     isFeatured: true,
     backgroundLink: "./assets/img/starkclass.jpg",
@@ -544,7 +609,6 @@ export const allProjects = [
       "Also I inplemented a BASH script to store all API keys locally on your machine since this project require you to store them locally on your enviroemnt for security reasons",
     ],
   },
-
   {
     title: "Flight Search App",
     localLink: "/flightSearchApp",
@@ -849,72 +913,6 @@ export const allProjects = [
     descLong: [
       `This is an Instagram clone SPA (single-page-application) where my main focus was to understand the react and redux `,
       `Another new technology I used on this project was the integration of Psql using sequelizer`,
-    ],
-  },
-  {
-    title: "Sequelize your Burger App",
-    localLink: "/sequelizeYourBurgerApp",
-    gitLink: "https://github.com/christopher73/Eat-Da-Burger",
-    externalLink: "https://node-your-burger.herokuapp.com/",
-    isFeatured: true,
-    pictureLink: "./assets/img/sequelizeYourBurgerApp.gif",
-    year: "2019",
-    chartPower: {
-      type: "pie",
-      data: {
-        labels: ["js.svg", "sequelize.svg", "express.svg", "bootstrap.svg"],
-        datasets: [
-          {
-            data: [9, 7, 6, 5, 8, 9],
-            backgroundColor: [
-              "rgb(255, 99, 132)",
-              "rgb(54, 162, 235)",
-              "rgb(75, 192, 192)",
-              "rgb(153, 102, 255)",
-            ],
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        legend: {
-          display: true,
-        },
-        layout: {
-          padding: {
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0,
-          },
-        },
-        scales: {
-          yAxes: [
-            {
-              display: false,
-              ticks: {
-                fontFamily: `"Roboto Mono", monospace`,
-                fontSize: 12,
-                fontColor: "#101c28",
-              },
-            },
-          ],
-          xAxes: [
-            {
-              display: false,
-              ticks: {
-                max: 10,
-                beginAtZero: true,
-              },
-            },
-          ],
-        },
-      },
-    },
-    desc:
-      "This Application is pretty much an alternate way of constructing a to-do app, the data is stored on a MySQL server using Sequilized as the main RDM.",
-    descLong: [
-      "This Application is pretty much an alternate way of constructing a to-do app, data is stored using a mysql server using models created with sequelize.",
     ],
   },
 ];

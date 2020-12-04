@@ -8,7 +8,7 @@ export default function Links() {
         <span>{" -> "}</span>Projects
       </Link>
       <Link to="/current-stack">
-        <span>{" -> "}</span>Current Stack
+        <span>{" -> "}</span>Stack
       </Link>
       <Link to="/blog">
         <span>{" -> "}</span>Blog

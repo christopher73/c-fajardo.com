@@ -6,21 +6,6 @@ body,
   margin: 0;
 }
 
-.social-icon {
-  display: flex;
-  margin-bottom: 20px;
-}
-.social-icon-link {
-  /* color: rgb(134, 134, 134); */
-  /* color: rgb(135, 132, 187); */
-  color: #82a88c;
-  font-size: 1.5em;
-  margin: auto;
-}
-.social-icon-link:hover {
-  color: #abcfb4;
-  font-size: 2em;
-}
 .fade-in {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
