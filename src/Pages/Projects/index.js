@@ -9,19 +9,15 @@ const projectDivs = allProjects.map((elem, i) =>
   elem.isFeatured === true ? <ProjectList project={elem} key={i} /> : null
 );
 
-export default function Landing() {
+export default function Projects() {
   const theme = useContext(ThemeContext);
   const stylo = {
     fontFamily: "Noto Sans JP",
     ...theme,
   };
   return (
-    <div style={stylo} className="landing">
-      <img src="./assets/img/chrisPort.png" />
-      <div className="boxy">
-        <button>I</button> <button>love</button> <button>to</button>{" "}
-        <button>code</button>
-      </div>
+    <div style={stylo} className="landing-project">
+      {projectDivs}
     </div>
   );
 }

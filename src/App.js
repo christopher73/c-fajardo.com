@@ -11,6 +11,7 @@ import MainContainer from "./components/MainContainer";
 import ThemeContext from "./components/DarkMode/ThemeContext";
 import ContactMe from "./Pages/ContactMe/ContactMe";
 import Technologies from "./Pages/Technologies/Technologies";
+import Projects from "./Pages/Projects";
 
 AOS.init({ duration: 1000 });
 console.log(chris);
@@ -38,6 +39,7 @@ function App() {
     <Router>
       <MainContainer>
         <Route exact path="/" component={Landing} />
+        <Route exact path="/projects" component={Projects} />
         <Route exact path="/contact-me" component={ContactMe} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/current-stack" component={Technologies} />

@@ -16,7 +16,7 @@ export default function MainContainer(props) {
     >
       <div className="main-container">
         <SideBar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <div>{props.children}</div>
+        {props.children}
       </div>
     </ThemeContext.Provider>
   );

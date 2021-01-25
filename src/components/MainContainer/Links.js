@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Links() {
   return (
     <div className="side-bar-links">
-      <Link to="/">
+      <Link to="/projects">
         <span>{" -> "}</span>Projects
       </Link>
       <Link to="/current-stack">

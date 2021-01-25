@@ -5,29 +5,6 @@ body,
   min-width: 100%;
   margin: 0;
 }
-.landing {
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.boxy {
-  width: 400px;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.boxy button {
-  text-align: center;
-  width: 80px;
-  border: 1px solid rgb(0, 189, 0);
-  color: rgb(0, 189, 0);
-}
-.landing img {
-  width: 400px;
-  /* border-radius: 5px; */
-}
 
 .fade-in {
   animation: fadeIn ease 2s;

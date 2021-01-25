@@ -48,9 +48,9 @@ export default function TypedString() {
     };
     let typed = new Typed(el, options);
     return () => typed.destroy();
-  });
+  }, [ip]);
   return (
-    <div className='side-bar-terminal'>
+    <div className="side-bar-terminal">
       <pre ref={(e) => (el = e)} />
     </div>
   );
