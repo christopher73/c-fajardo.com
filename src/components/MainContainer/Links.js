@@ -13,13 +13,13 @@ export default function Links() {
       <Link to="/blog">
         <span>{" -> "}</span>Blog
       </Link>
-      <Link
+      {/* <Link
         to="/contact-me"
         id="btn-lets-talk"
         className="btn btn-lg shadow-lg "
       >
         Let's talk
-      </Link>
+      </Link> */}
     </div>
   );
 }

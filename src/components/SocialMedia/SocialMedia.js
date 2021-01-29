@@ -6,7 +6,7 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
-import resume from "./ChristopherResume2020.pdf";
+import resume from "./cfajardo_resume.pdf";
 export default function SocialMedia() {
   return (
     <div className="social-icons">

@@ -10,6 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@primer/octicons-react": "^9.4.0",
     "aos": "^2.3.4",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "normalize.css": "^8.0.1",

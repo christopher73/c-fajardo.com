@@ -1,26 +1,37 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ThemeContext from "../../components/DarkMode/ThemeContext";
 import ProjectList from "../../components/ProjectList";
 import { allProjects } from "../../data/constants";
 import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import "./style.css";
-
-const projectDivs = allProjects.map((elem, i) =>
-  elem.isFeatured === true ? <ProjectList project={elem} key={i} /> : null
-);
+import { GifBackground } from "../../components/GifBackground";
 
 export default function Landing() {
+  const [word, setWord] = useState("");
   const theme = useContext(ThemeContext);
   const stylo = {
     fontFamily: "Noto Sans JP",
     ...theme,
   };
+  const handleClick = (clickedWord) => {
+    setWord((s) => (s === clickedWord ? "" : clickedWord));
+  };
   return (
     <div style={stylo} className="landing">
-      <img src="./assets/img/chrisPort.png" />
-      <div className="boxy">
-        <button>I</button> <button>love</button> <button>to</button>{" "}
-        <button>code</button>
+      <GifBackground word={word} />
+      <div className="ilovetocode_container">
+        <div className="ilovetocode_image">
+          <img src="./assets/img/chrisPort.png" />
+        </div>
+        <div className="ilovetocode">
+          <button onClick={() => handleClick("i")}>I</button>
+          <button onClick={() => handleClick("love")}>love</button>
+          <button onClick={() => handleClick("to")}>to</button>
+          <button onClick={() => handleClick("code")}>code</button>
+        </div>
+        <div className="ilovetocode">
+          <p>{"Click the buttons above =)"}</p>
+        </div>
       </div>
     </div>
   );
